@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="186" id="KGk-i7-Jjw" customClass="MainTableViewCell" customModule="CeibaApp_IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="188"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="401" height="188"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="62v-Tf-x6s" customClass="LHView" customModule="CeibaApp_IOS" customModuleProvider="target">
+                        <rect key="frame" x="20" y="19" width="356" height="157"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Prueba" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53Z-7i-V2q">
+                                <rect key="frame" x="30" y="21" width="141.66666666666666" height="21.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="19"/>
+                                <color key="textColor" red="0.25297478343340896" green="0.59778407738380823" blue="0.069864401581629446" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone.homebutton" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aTJ-Ou-R4Y">
+                                <rect key="frame" x="30" y="48.333333333333336" width="17" height="20"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01-0001-0001-81222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mch-Em-Pd9">
+                                <rect key="frame" x="52.999999999999986" y="50.666666666666671" width="164.66666666666663" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone.homebutton" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="j0M-Xc-j7o">
+                                <rect key="frame" x="30" y="79" width="17" height="20"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email@mail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTx-24-Qq2">
+                                <rect key="frame" x="52.000000000000007" y="76.666666666666671" width="124.66666666666669" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver Publicaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rvo-wN-ilw">
+                                <rect key="frame" x="199" y="116" width="143" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YxP-dH-3G1"/>
+                                    <constraint firstAttribute="width" constant="143" id="sre-a4-Tyt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.25297478340000001" green="0.59778407739999995" blue="0.069864401579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="356" id="0el-X1-gr9"/>
+                            <constraint firstAttribute="trailing" secondItem="Rvo-wN-ilw" secondAttribute="trailing" constant="14" id="1la-VT-mrk"/>
+                            <constraint firstItem="mch-Em-Pd9" firstAttribute="leading" secondItem="aTJ-Ou-R4Y" secondAttribute="trailing" constant="6" id="2CB-zN-wlV"/>
+                            <constraint firstItem="nTx-24-Qq2" firstAttribute="leading" secondItem="j0M-Xc-j7o" secondAttribute="trailing" constant="5" id="2Km-R8-kdV"/>
+                            <constraint firstItem="j0M-Xc-j7o" firstAttribute="leading" secondItem="62v-Tf-x6s" secondAttribute="leading" constant="30" id="7sH-2Y-vfV"/>
+                            <constraint firstItem="53Z-7i-V2q" firstAttribute="leading" secondItem="62v-Tf-x6s" secondAttribute="leading" constant="30" id="B6r-fl-jK5"/>
+                            <constraint firstAttribute="height" constant="157" id="Ikl-lS-GrU"/>
+                            <constraint firstItem="aTJ-Ou-R4Y" firstAttribute="top" secondItem="53Z-7i-V2q" secondAttribute="bottom" constant="5" id="L2m-JO-0lm"/>
+                            <constraint firstAttribute="bottom" secondItem="Rvo-wN-ilw" secondAttribute="bottom" constant="11" id="Qw7-hS-2Ib"/>
+                            <constraint firstItem="j0M-Xc-j7o" firstAttribute="top" secondItem="aTJ-Ou-R4Y" secondAttribute="bottom" constant="10" id="cWv-vr-Gny"/>
+                            <constraint firstItem="aTJ-Ou-R4Y" firstAttribute="trailing" secondItem="j0M-Xc-j7o" secondAttribute="trailing" id="fTC-sC-A6S"/>
+                            <constraint firstItem="aTJ-Ou-R4Y" firstAttribute="leading" secondItem="62v-Tf-x6s" secondAttribute="leading" constant="30" id="hsO-TY-xGw"/>
+                            <constraint firstItem="53Z-7i-V2q" firstAttribute="top" secondItem="62v-Tf-x6s" secondAttribute="top" constant="21" id="iI8-cV-QWG"/>
+                            <constraint firstItem="nTx-24-Qq2" firstAttribute="top" secondItem="mch-Em-Pd9" secondAttribute="bottom" constant="5" id="pOg-8p-UTX"/>
+                            <constraint firstItem="mch-Em-Pd9" firstAttribute="top" secondItem="53Z-7i-V2q" secondAttribute="bottom" constant="8" id="pZ0-dl-GVy"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowY">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowBlur">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowX">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="62v-Tf-x6s" secondAttribute="trailing" constant="25" id="X9s-Yv-ihW"/>
+                    <constraint firstAttribute="bottom" secondItem="62v-Tf-x6s" secondAttribute="bottom" constant="12" id="ahC-Uq-Y9S"/>
+                    <constraint firstItem="62v-Tf-x6s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="e0a-A2-Jim"/>
+                    <constraint firstItem="62v-Tf-x6s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="etY-B0-jvQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="emailUserLabel" destination="nTx-24-Qq2" id="JLA-M5-wtM"/>
+                <outlet property="nameLabel" destination="53Z-7i-V2q" id="PFt-eB-Jz0"/>
+                <outlet property="numberLabel" destination="mch-Em-Pd9" id="mpT-dW-IHI"/>
+            </connections>
+            <point key="canvasLocation" x="217.69230769230768" y="142.18009478672985"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iphone.homebutton" catalog="system" width="108" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

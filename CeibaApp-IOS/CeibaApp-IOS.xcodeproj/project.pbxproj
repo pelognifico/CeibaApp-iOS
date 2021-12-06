@@ -1,0 +1,1368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82B866FB3A00AF4224EA65B1 /* Pods_CeibaApp_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A10359AFC00927CD3FDB69 /* Pods_CeibaApp_IOS.framework */; };
+		9F1A836070CEF251049388DD /* Pods_CeibaApp_IOS_CeibaApp_IOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9C7ECB725B866096F77981 /* Pods_CeibaApp_IOS_CeibaApp_IOSUITests.framework */; };
+		AA3B65C3275949BF00032D6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B65C2275949BF00032D6A /* AppDelegate.swift */; };
+		AA3B65C7275949BF00032D6A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B65C6275949BF00032D6A /* BaseViewController.swift */; };
+		AA3B65CA275949BF00032D6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA3B65C8275949BF00032D6A /* Main.storyboard */; };
+		AA3B65CD275949BF00032D6A /* CeibaApp_IOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA3B65CB275949BF00032D6A /* CeibaApp_IOS.xcdatamodeld */; };
+		AA3B65CF275949C100032D6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA3B65CE275949C100032D6A /* Assets.xcassets */; };
+		AA3B65D2275949C100032D6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA3B65D0275949C100032D6A /* LaunchScreen.storyboard */; };
+		AA3B65DD275949C200032D6A /* CeibaApp_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B65DC275949C200032D6A /* CeibaApp_IOSTests.swift */; };
+		AA3B65E7275949C200032D6A /* CeibaApp_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B65E6275949C200032D6A /* CeibaApp_IOSUITests.swift */; };
+		AA3B65E9275949C200032D6A /* CeibaApp_IOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B65E8275949C200032D6A /* CeibaApp_IOSUITestsLaunchTests.swift */; };
+		AA3B660E275951C700032D6A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B660C275951C700032D6A /* MainViewController.swift */; };
+		AA3B660F275951C700032D6A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA3B660D275951C700032D6A /* MainViewController.xib */; };
+		AA3B6613275958F100032D6A /* GeneralRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B6612275958F100032D6A /* GeneralRoute.swift */; };
+		AA3B66152759590E00032D6A /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B66142759590E00032D6A /* AppRoute.swift */; };
+		AA3B661727595A9C00032D6A /* UINavigationController+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B661627595A9C00032D6A /* UINavigationController+CA.swift */; };
+		AA3B661C2759642A00032D6A /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B661A2759642A00032D6A /* MainTableViewCell.swift */; };
+		AA3B661D2759642A00032D6A /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA3B661B2759642A00032D6A /* MainTableViewCell.xib */; };
+		AA3B6621275A3FEF00032D6A /* MailnDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B661F275A3FEF00032D6A /* MailnDetailsViewController.swift */; };
+		AA3B6622275A3FEF00032D6A /* MailnDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA3B6620275A3FEF00032D6A /* MailnDetailsViewController.xib */; };
+		AA3B6624275A44E100032D6A /* LHView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B6623275A44E100032D6A /* LHView.swift */; };
+		AA3B6626275A464900032D6A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B6625275A464900032D6A /* NetworkService.swift */; };
+		AA3B6629275A469800032D6A /* MainAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B6628275A469800032D6A /* MainAPI.swift */; };
+		AA3B662B275A46B500032D6A /* MainEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B662A275A46B500032D6A /* MainEndpoint.swift */; };
+		AA3B662D275A4E2400032D6A /* MainWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B662C275A4E2400032D6A /* MainWorker.swift */; };
+		AA3B662F275A4FBE00032D6A /* ModelCeiba.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B662E275A4FBE00032D6A /* ModelCeiba.swift */; };
+		AA3B6636275A505700032D6A /* MainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B6635275A505700032D6A /* MainModels.swift */; };
+		AA3B6638275A50BE00032D6A /* MainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B6637275A50BE00032D6A /* MainError.swift */; };
+		AA3B663A275A5D5600032D6A /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B6639275A5D5600032D6A /* MainPresenter.swift */; };
+		AA3B663C275A5D6500032D6A /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B663B275A5D6500032D6A /* MainInteractor.swift */; };
+		AA3B663E275A63E100032D6A /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B663D275A63E100032D6A /* MainRouter.swift */; };
+		AA3B6645275A866100032D6A /* MainDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B6644275A866100032D6A /* MainDetailsModels.swift */; };
+		AA3B6647275A86F100032D6A /* MainDetailsInterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B6646275A86F100032D6A /* MainDetailsInterator.swift */; };
+		AA3B664B275A877700032D6A /* MainDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B664A275A877700032D6A /* MainDetailsPresenter.swift */; };
+		AA3B664E275A87B400032D6A /* MainDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B664D275A87B400032D6A /* MainDetailsRouter.swift */; };
+		AA3B6652275AA70C00032D6A /* MainDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B6650275AA70C00032D6A /* MainDetailsTableViewCell.swift */; };
+		AA3B6653275AA70C00032D6A /* MainDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA3B6651275AA70C00032D6A /* MainDetailsTableViewCell.xib */; };
+		AA3B6656275AD03600032D6A /* CMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B6655275AD03600032D6A /* CMTextField.swift */; };
+		AA3B6658275C52E200032D6A /* MainEndpoinTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B6657275C52E200032D6A /* MainEndpoinTest.swift */; };
+		AA3B665F275C566800032D6A /* MainWorkerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B665E275C566800032D6A /* MainWorkerMock.swift */; };
+		AA3B6661275C5AC600032D6A /* MainFailureResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B6660275C5AC600032D6A /* MainFailureResponse.swift */; };
+		AA3B6663275C5F3200032D6A /* MainSucessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B6662275C5F3100032D6A /* MainSucessResponse.swift */; };
+		AA3B6667275C646F00032D6A /* MainDesplayLogicMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B6666275C646F00032D6A /* MainDesplayLogicMock.swift */; };
+		AA3B6669275C662300032D6A /* MainPresentationLogicMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B6668275C662300032D6A /* MainPresentationLogicMock.swift */; };
+		AA3B666C275C677900032D6A /* HomeViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B666B275C677900032D6A /* HomeViewControllerTest.swift */; };
+		AA3B666F275C699700032D6A /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B666E275C699700032D6A /* MainPresenterTest.swift */; };
+		AA3B6672275C6C3A00032D6A /* MainInteratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B6671275C6C3A00032D6A /* MainInteratorTest.swift */; };
+		AA3B6676275C6E1200032D6A /* MainDetailsDisplayLogicMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B6675275C6E1200032D6A /* MainDetailsDisplayLogicMock.swift */; };
+		AA3B6678275C6EC700032D6A /* MainDetailsPresentationLogicMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B6677275C6EC700032D6A /* MainDetailsPresentationLogicMock.swift */; };
+		AA3B667B275C6FAB00032D6A /* MainDetailsViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B667A275C6FAB00032D6A /* MainDetailsViewControllerTest.swift */; };
+		AA3B667E275C72F200032D6A /* MainDetailsPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B667D275C72F200032D6A /* MainDetailsPresenterTest.swift */; };
+		AA3B6681275C74C400032D6A /* MainDetailsInteratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B6680275C74C400032D6A /* MainDetailsInteratorTest.swift */; };
+		E6FD3D7E8C22C6482B0EEE6A /* Pods_CeibaApp_IOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46920D649481EF6FC9156468 /* Pods_CeibaApp_IOSTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA3B65D9275949C200032D6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA3B65B7275949BF00032D6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA3B65BE275949BF00032D6A;
+			remoteInfo = "CeibaApp-IOS";
+		};
+		AA3B65E3275949C200032D6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA3B65B7275949BF00032D6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA3B65BE275949BF00032D6A;
+			remoteInfo = "CeibaApp-IOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0811F2A7C5F9945394330B15 /* Pods-CeibaApp-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaApp-IOS.debug.xcconfig"; path = "Target Support Files/Pods-CeibaApp-IOS/Pods-CeibaApp-IOS.debug.xcconfig"; sourceTree = "<group>"; };
+		08DFB382B3ABB7D5518E6C29 /* Pods-CeibaApp-IOS-CeibaApp-IOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaApp-IOS-CeibaApp-IOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-CeibaApp-IOS-CeibaApp-IOSUITests/Pods-CeibaApp-IOS-CeibaApp-IOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B9C7ECB725B866096F77981 /* Pods_CeibaApp_IOS_CeibaApp_IOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaApp_IOS_CeibaApp_IOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20AC9B0629D5F04AA6527121 /* Pods-CeibaApp-IOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaApp-IOSTests.debug.xcconfig"; path = "Target Support Files/Pods-CeibaApp-IOSTests/Pods-CeibaApp-IOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		27A10359AFC00927CD3FDB69 /* Pods_CeibaApp_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaApp_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		401CC6F5A8C37CB25D7226D3 /* Pods-CeibaApp-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaApp-IOS.release.xcconfig"; path = "Target Support Files/Pods-CeibaApp-IOS/Pods-CeibaApp-IOS.release.xcconfig"; sourceTree = "<group>"; };
+		46920D649481EF6FC9156468 /* Pods_CeibaApp_IOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaApp_IOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A166DB6B793C61B55EFE7FFF /* Pods-CeibaApp-IOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaApp-IOSTests.release.xcconfig"; path = "Target Support Files/Pods-CeibaApp-IOSTests/Pods-CeibaApp-IOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		AA3B65BF275949BF00032D6A /* CeibaApp-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CeibaApp-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3B65C2275949BF00032D6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA3B65C6275949BF00032D6A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AA3B65C9275949BF00032D6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA3B65CC275949BF00032D6A /* CeibaApp_IOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CeibaApp_IOS.xcdatamodel; sourceTree = "<group>"; };
+		AA3B65CE275949C100032D6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA3B65D1275949C100032D6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA3B65D3275949C100032D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA3B65D8275949C200032D6A /* CeibaApp-IOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CeibaApp-IOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3B65DC275949C200032D6A /* CeibaApp_IOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeibaApp_IOSTests.swift; sourceTree = "<group>"; };
+		AA3B65E2275949C200032D6A /* CeibaApp-IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CeibaApp-IOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3B65E6275949C200032D6A /* CeibaApp_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeibaApp_IOSUITests.swift; sourceTree = "<group>"; };
+		AA3B65E8275949C200032D6A /* CeibaApp_IOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeibaApp_IOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AA3B660C275951C700032D6A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AA3B660D275951C700032D6A /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		AA3B6612275958F100032D6A /* GeneralRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralRoute.swift; sourceTree = "<group>"; };
+		AA3B66142759590E00032D6A /* AppRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		AA3B661627595A9C00032D6A /* UINavigationController+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+CA.swift"; sourceTree = "<group>"; };
+		AA3B661A2759642A00032D6A /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		AA3B661B2759642A00032D6A /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		AA3B661F275A3FEF00032D6A /* MailnDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailnDetailsViewController.swift; sourceTree = "<group>"; };
+		AA3B6620275A3FEF00032D6A /* MailnDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MailnDetailsViewController.xib; sourceTree = "<group>"; };
+		AA3B6623275A44E100032D6A /* LHView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LHView.swift; sourceTree = "<group>"; };
+		AA3B6625275A464900032D6A /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AA3B6628275A469800032D6A /* MainAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAPI.swift; sourceTree = "<group>"; };
+		AA3B662A275A46B500032D6A /* MainEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEndpoint.swift; sourceTree = "<group>"; };
+		AA3B662C275A4E2400032D6A /* MainWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWorker.swift; sourceTree = "<group>"; };
+		AA3B662E275A4FBE00032D6A /* ModelCeiba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCeiba.swift; sourceTree = "<group>"; };
+		AA3B6635275A505700032D6A /* MainModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainModels.swift; sourceTree = "<group>"; };
+		AA3B6637275A50BE00032D6A /* MainError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainError.swift; sourceTree = "<group>"; };
+		AA3B6639275A5D5600032D6A /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		AA3B663B275A5D6500032D6A /* MainInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		AA3B663D275A63E100032D6A /* MainRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		AA3B6644275A866100032D6A /* MainDetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailsModels.swift; sourceTree = "<group>"; };
+		AA3B6646275A86F100032D6A /* MainDetailsInterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailsInterator.swift; sourceTree = "<group>"; };
+		AA3B664A275A877700032D6A /* MainDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailsPresenter.swift; sourceTree = "<group>"; };
+		AA3B664D275A87B400032D6A /* MainDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailsRouter.swift; sourceTree = "<group>"; };
+		AA3B6650275AA70C00032D6A /* MainDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		AA3B6651275AA70C00032D6A /* MainDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		AA3B6655275AD03600032D6A /* CMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMTextField.swift; sourceTree = "<group>"; };
+		AA3B6657275C52E200032D6A /* MainEndpoinTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEndpoinTest.swift; sourceTree = "<group>"; };
+		AA3B665E275C566800032D6A /* MainWorkerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWorkerMock.swift; sourceTree = "<group>"; };
+		AA3B6660275C5AC600032D6A /* MainFailureResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFailureResponse.swift; sourceTree = "<group>"; };
+		AA3B6662275C5F3100032D6A /* MainSucessResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSucessResponse.swift; sourceTree = "<group>"; };
+		AA3B6666275C646F00032D6A /* MainDesplayLogicMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDesplayLogicMock.swift; sourceTree = "<group>"; };
+		AA3B6668275C662300032D6A /* MainPresentationLogicMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresentationLogicMock.swift; sourceTree = "<group>"; };
+		AA3B666B275C677900032D6A /* HomeViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTest.swift; sourceTree = "<group>"; };
+		AA3B666E275C699700032D6A /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
+		AA3B6671275C6C3A00032D6A /* MainInteratorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteratorTest.swift; sourceTree = "<group>"; };
+		AA3B6675275C6E1200032D6A /* MainDetailsDisplayLogicMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailsDisplayLogicMock.swift; sourceTree = "<group>"; };
+		AA3B6677275C6EC700032D6A /* MainDetailsPresentationLogicMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailsPresentationLogicMock.swift; sourceTree = "<group>"; };
+		AA3B667A275C6FAB00032D6A /* MainDetailsViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailsViewControllerTest.swift; sourceTree = "<group>"; };
+		AA3B667D275C72F200032D6A /* MainDetailsPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailsPresenterTest.swift; sourceTree = "<group>"; };
+		AA3B6680275C74C400032D6A /* MainDetailsInteratorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailsInteratorTest.swift; sourceTree = "<group>"; };
+		DC08C109E3267D86FA8D507C /* Pods-CeibaApp-IOS-CeibaApp-IOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaApp-IOS-CeibaApp-IOSUITests.release.xcconfig"; path = "Target Support Files/Pods-CeibaApp-IOS-CeibaApp-IOSUITests/Pods-CeibaApp-IOS-CeibaApp-IOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA3B65BC275949BF00032D6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82B866FB3A00AF4224EA65B1 /* Pods_CeibaApp_IOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3B65D5275949C200032D6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6FD3D7E8C22C6482B0EEE6A /* Pods_CeibaApp_IOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3B65DF275949C200032D6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F1A836070CEF251049388DD /* Pods_CeibaApp_IOS_CeibaApp_IOSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		907592C4C115BC18EA9F2F6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0811F2A7C5F9945394330B15 /* Pods-CeibaApp-IOS.debug.xcconfig */,
+				401CC6F5A8C37CB25D7226D3 /* Pods-CeibaApp-IOS.release.xcconfig */,
+				08DFB382B3ABB7D5518E6C29 /* Pods-CeibaApp-IOS-CeibaApp-IOSUITests.debug.xcconfig */,
+				DC08C109E3267D86FA8D507C /* Pods-CeibaApp-IOS-CeibaApp-IOSUITests.release.xcconfig */,
+				20AC9B0629D5F04AA6527121 /* Pods-CeibaApp-IOSTests.debug.xcconfig */,
+				A166DB6B793C61B55EFE7FFF /* Pods-CeibaApp-IOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A37950F33C37D30D45BA6C3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27A10359AFC00927CD3FDB69 /* Pods_CeibaApp_IOS.framework */,
+				1B9C7ECB725B866096F77981 /* Pods_CeibaApp_IOS_CeibaApp_IOSUITests.framework */,
+				46920D649481EF6FC9156468 /* Pods_CeibaApp_IOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA3B65B6275949BF00032D6A = {
+			isa = PBXGroup;
+			children = (
+				AA3B65C1275949BF00032D6A /* CeibaApp-IOS */,
+				AA3B65DB275949C200032D6A /* CeibaApp-IOSTests */,
+				AA3B65E5275949C200032D6A /* CeibaApp-IOSUITests */,
+				AA3B65C0275949BF00032D6A /* Products */,
+				907592C4C115BC18EA9F2F6A /* Pods */,
+				A37950F33C37D30D45BA6C3E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AA3B65C0275949BF00032D6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B65BF275949BF00032D6A /* CeibaApp-IOS.app */,
+				AA3B65D8275949C200032D6A /* CeibaApp-IOSTests.xctest */,
+				AA3B65E2275949C200032D6A /* CeibaApp-IOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA3B65C1275949BF00032D6A /* CeibaApp-IOS */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B65F527594B2D00032D6A /* Externals */,
+				AA3B65F627594B4000032D6A /* Main */,
+				AA3B65F727594B6A00032D6A /* Resources */,
+				AA3B65F827594B7700032D6A /* Common */,
+				AA3B65F927594B8800032D6A /* Scenes */,
+				AA3B65D3275949C100032D6A /* Info.plist */,
+				AA3B65CB275949BF00032D6A /* CeibaApp_IOS.xcdatamodeld */,
+			);
+			path = "CeibaApp-IOS";
+			sourceTree = "<group>";
+		};
+		AA3B65DB275949C200032D6A /* CeibaApp-IOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6673275C6DCC00032D6A /* MainDetailsModuleTest */,
+				AA3B6664275C641800032D6A /* MainMudeleTest */,
+				AA3B665A275C55B500032D6A /* Test Response API */,
+				AA3B6659275C52F500032D6A /* Test Endpoint */,
+				AA3B65DC275949C200032D6A /* CeibaApp_IOSTests.swift */,
+			);
+			path = "CeibaApp-IOSTests";
+			sourceTree = "<group>";
+		};
+		AA3B65E5275949C200032D6A /* CeibaApp-IOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B65E6275949C200032D6A /* CeibaApp_IOSUITests.swift */,
+				AA3B65E8275949C200032D6A /* CeibaApp_IOSUITestsLaunchTests.swift */,
+			);
+			path = "CeibaApp-IOSUITests";
+			sourceTree = "<group>";
+		};
+		AA3B65F527594B2D00032D6A /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B65FD27594C2B00032D6A /* Util */,
+				AA3B65FC27594C0C00032D6A /* Setings */,
+				AA3B65FB27594BEE00032D6A /* Extensions */,
+				AA3B65FA27594BE200032D6A /* UI */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		AA3B65F627594B4000032D6A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B65C2275949BF00032D6A /* AppDelegate.swift */,
+				AA3B65C6275949BF00032D6A /* BaseViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AA3B65F727594B6A00032D6A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B65C8275949BF00032D6A /* Main.storyboard */,
+				AA3B65CE275949C100032D6A /* Assets.xcassets */,
+				AA3B65D0275949C100032D6A /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA3B65F827594B7700032D6A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B660227594CE000032D6A /* Router */,
+				AA3B660127594CD200032D6A /* Models */,
+				AA3B660027594CC300032D6A /* Services */,
+				AA3B65FF27594CB400032D6A /* Worker */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AA3B65F927594B8800032D6A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B661E275A3F9F00032D6A /* Main Details */,
+				AA3B660327594CF000032D6A /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		AA3B65FA27594BE200032D6A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6623275A44E100032D6A /* LHView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		AA3B65FB27594BEE00032D6A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6655275AD03600032D6A /* CMTextField.swift */,
+				AA3B661627595A9C00032D6A /* UINavigationController+CA.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AA3B65FC27594C0C00032D6A /* Setings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setings;
+			sourceTree = "<group>";
+		};
+		AA3B65FD27594C2B00032D6A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		AA3B65FF27594CB400032D6A /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B662C275A4E2400032D6A /* MainWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		AA3B660027594CC300032D6A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6625275A464900032D6A /* NetworkService.swift */,
+				AA3B6627275A467B00032D6A /* Main */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA3B660127594CD200032D6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B662E275A4FBE00032D6A /* ModelCeiba.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA3B660227594CE000032D6A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B66142759590E00032D6A /* AppRoute.swift */,
+				AA3B6612275958F100032D6A /* GeneralRoute.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AA3B660327594CF000032D6A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6604275950DB00032D6A /* Modules */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AA3B6604275950DB00032D6A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B66182759637500032D6A /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AA3B6605275950F800032D6A /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B660B2759518800032D6A /* Presenter */,
+				AA3B660A2759517A00032D6A /* Router */,
+				AA3B66092759517000032D6A /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		AA3B66062759510F00032D6A /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B66082759515000032D6A /* Configurator */,
+				AA3B66072759513D00032D6A /* Interator */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		AA3B66072759513D00032D6A /* Interator */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B663B275A5D6500032D6A /* MainInteractor.swift */,
+			);
+			path = Interator;
+			sourceTree = "<group>";
+		};
+		AA3B66082759515000032D6A /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6637275A50BE00032D6A /* MainError.swift */,
+				AA3B6635275A505700032D6A /* MainModels.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		AA3B66092759517000032D6A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6619275963A200032D6A /* CellCeibaApp */,
+				AA3B660C275951C700032D6A /* MainViewController.swift */,
+				AA3B660D275951C700032D6A /* MainViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA3B660A2759517A00032D6A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B663D275A63E100032D6A /* MainRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AA3B660B2759518800032D6A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6639275A5D5600032D6A /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AA3B66182759637500032D6A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B66062759510F00032D6A /* Application Logic */,
+				AA3B6605275950F800032D6A /* User Interface */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AA3B6619275963A200032D6A /* CellCeibaApp */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B661A2759642A00032D6A /* MainTableViewCell.swift */,
+				AA3B661B2759642A00032D6A /* MainTableViewCell.xib */,
+			);
+			path = CellCeibaApp;
+			sourceTree = "<group>";
+		};
+		AA3B661E275A3F9F00032D6A /* Main Details */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B663F275A783F00032D6A /* Modules */,
+			);
+			path = "Main Details";
+			sourceTree = "<group>";
+		};
+		AA3B6627275A467B00032D6A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B662A275A46B500032D6A /* MainEndpoint.swift */,
+				AA3B6628275A469800032D6A /* MainAPI.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AA3B663F275A783F00032D6A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6640275A858700032D6A /* Main Details */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AA3B6640275A858700032D6A /* Main Details */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6641275A859800032D6A /* Applocation Logic */,
+				AA3B6648275A873A00032D6A /* User Interface */,
+			);
+			path = "Main Details";
+			sourceTree = "<group>";
+		};
+		AA3B6641275A859800032D6A /* Applocation Logic */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6642275A85A700032D6A /* Configurator */,
+				AA3B6643275A85BD00032D6A /* Interator */,
+			);
+			path = "Applocation Logic";
+			sourceTree = "<group>";
+		};
+		AA3B6642275A85A700032D6A /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6644275A866100032D6A /* MainDetailsModels.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		AA3B6643275A85BD00032D6A /* Interator */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6646275A86F100032D6A /* MainDetailsInterator.swift */,
+			);
+			path = Interator;
+			sourceTree = "<group>";
+		};
+		AA3B6648275A873A00032D6A /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6649275A875800032D6A /* Presenter */,
+				AA3B664C275A879400032D6A /* Router */,
+				AA3B6654275AB18300032D6A /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		AA3B6649275A875800032D6A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B664A275A877700032D6A /* MainDetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AA3B664C275A879400032D6A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B664D275A87B400032D6A /* MainDetailsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AA3B664F275AA6B300032D6A /* Cell Main Details */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6650275AA70C00032D6A /* MainDetailsTableViewCell.swift */,
+				AA3B6651275AA70C00032D6A /* MainDetailsTableViewCell.xib */,
+			);
+			path = "Cell Main Details";
+			sourceTree = "<group>";
+		};
+		AA3B6654275AB18300032D6A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B664F275AA6B300032D6A /* Cell Main Details */,
+				AA3B661F275A3FEF00032D6A /* MailnDetailsViewController.swift */,
+				AA3B6620275A3FEF00032D6A /* MailnDetailsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA3B6659275C52F500032D6A /* Test Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6657275C52E200032D6A /* MainEndpoinTest.swift */,
+			);
+			path = "Test Endpoint";
+			sourceTree = "<group>";
+		};
+		AA3B665A275C55B500032D6A /* Test Response API */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B665D275C560300032D6A /* Success Case */,
+				AA3B665C275C55ED00032D6A /* Failure Case */,
+				AA3B665B275C55C700032D6A /* Workers Mocks */,
+			);
+			path = "Test Response API";
+			sourceTree = "<group>";
+		};
+		AA3B665B275C55C700032D6A /* Workers Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B665E275C566800032D6A /* MainWorkerMock.swift */,
+			);
+			path = "Workers Mocks";
+			sourceTree = "<group>";
+		};
+		AA3B665C275C55ED00032D6A /* Failure Case */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6660275C5AC600032D6A /* MainFailureResponse.swift */,
+			);
+			path = "Failure Case";
+			sourceTree = "<group>";
+		};
+		AA3B665D275C560300032D6A /* Success Case */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6662275C5F3100032D6A /* MainSucessResponse.swift */,
+			);
+			path = "Success Case";
+			sourceTree = "<group>";
+		};
+		AA3B6664275C641800032D6A /* MainMudeleTest */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6670275C6B8E00032D6A /* Interator */,
+				AA3B666D275C697500032D6A /* Presenter */,
+				AA3B666A275C675400032D6A /* View Controller */,
+				AA3B6665275C643100032D6A /* Mocks */,
+			);
+			path = MainMudeleTest;
+			sourceTree = "<group>";
+		};
+		AA3B6665275C643100032D6A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6666275C646F00032D6A /* MainDesplayLogicMock.swift */,
+				AA3B6668275C662300032D6A /* MainPresentationLogicMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		AA3B666A275C675400032D6A /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B666B275C677900032D6A /* HomeViewControllerTest.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		AA3B666D275C697500032D6A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B666E275C699700032D6A /* MainPresenterTest.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AA3B6670275C6B8E00032D6A /* Interator */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6671275C6C3A00032D6A /* MainInteratorTest.swift */,
+			);
+			path = Interator;
+			sourceTree = "<group>";
+		};
+		AA3B6673275C6DCC00032D6A /* MainDetailsModuleTest */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B667F275C749800032D6A /* Interator */,
+				AA3B667C275C72D100032D6A /* Presenter */,
+				AA3B6679275C6F8A00032D6A /* View Controller */,
+				AA3B6674275C6DE000032D6A /* Mocks */,
+			);
+			path = MainDetailsModuleTest;
+			sourceTree = "<group>";
+		};
+		AA3B6674275C6DE000032D6A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6677275C6EC700032D6A /* MainDetailsPresentationLogicMock.swift */,
+				AA3B6675275C6E1200032D6A /* MainDetailsDisplayLogicMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		AA3B6679275C6F8A00032D6A /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B667A275C6FAB00032D6A /* MainDetailsViewControllerTest.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		AA3B667C275C72D100032D6A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B667D275C72F200032D6A /* MainDetailsPresenterTest.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AA3B667F275C749800032D6A /* Interator */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B6680275C74C400032D6A /* MainDetailsInteratorTest.swift */,
+			);
+			path = Interator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA3B65BE275949BF00032D6A /* CeibaApp-IOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA3B65EC275949C200032D6A /* Build configuration list for PBXNativeTarget "CeibaApp-IOS" */;
+			buildPhases = (
+				D7252A0DC2D9A47E1287F0CB /* [CP] Check Pods Manifest.lock */,
+				AA3B65BB275949BF00032D6A /* Sources */,
+				AA3B65BC275949BF00032D6A /* Frameworks */,
+				AA3B65BD275949BF00032D6A /* Resources */,
+				3106DCCAD25240D9FBA6024C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CeibaApp-IOS";
+			productName = "CeibaApp-IOS";
+			productReference = AA3B65BF275949BF00032D6A /* CeibaApp-IOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA3B65D7275949C200032D6A /* CeibaApp-IOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA3B65EF275949C200032D6A /* Build configuration list for PBXNativeTarget "CeibaApp-IOSTests" */;
+			buildPhases = (
+				AC127669C3344BCCEC514A9F /* [CP] Check Pods Manifest.lock */,
+				AA3B65D4275949C200032D6A /* Sources */,
+				AA3B65D5275949C200032D6A /* Frameworks */,
+				AA3B65D6275949C200032D6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA3B65DA275949C200032D6A /* PBXTargetDependency */,
+			);
+			name = "CeibaApp-IOSTests";
+			productName = "CeibaApp-IOSTests";
+			productReference = AA3B65D8275949C200032D6A /* CeibaApp-IOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA3B65E1275949C200032D6A /* CeibaApp-IOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA3B65F2275949C200032D6A /* Build configuration list for PBXNativeTarget "CeibaApp-IOSUITests" */;
+			buildPhases = (
+				89E6FE7B4D5F8AE584925E6B /* [CP] Check Pods Manifest.lock */,
+				AA3B65DE275949C200032D6A /* Sources */,
+				AA3B65DF275949C200032D6A /* Frameworks */,
+				AA3B65E0275949C200032D6A /* Resources */,
+				610F146C9C3D914EEA9CB9BE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA3B65E4275949C200032D6A /* PBXTargetDependency */,
+			);
+			name = "CeibaApp-IOSUITests";
+			productName = "CeibaApp-IOSUITests";
+			productReference = AA3B65E2275949C200032D6A /* CeibaApp-IOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA3B65B7275949BF00032D6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					AA3B65BE275949BF00032D6A = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					AA3B65D7275949C200032D6A = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = AA3B65BE275949BF00032D6A;
+					};
+					AA3B65E1275949C200032D6A = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = AA3B65BE275949BF00032D6A;
+					};
+				};
+			};
+			buildConfigurationList = AA3B65BA275949BF00032D6A /* Build configuration list for PBXProject "CeibaApp-IOS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA3B65B6275949BF00032D6A;
+			productRefGroup = AA3B65C0275949BF00032D6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA3B65BE275949BF00032D6A /* CeibaApp-IOS */,
+				AA3B65D7275949C200032D6A /* CeibaApp-IOSTests */,
+				AA3B65E1275949C200032D6A /* CeibaApp-IOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA3B65BD275949BF00032D6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3B65D2275949C100032D6A /* LaunchScreen.storyboard in Resources */,
+				AA3B6622275A3FEF00032D6A /* MailnDetailsViewController.xib in Resources */,
+				AA3B65CF275949C100032D6A /* Assets.xcassets in Resources */,
+				AA3B6653275AA70C00032D6A /* MainDetailsTableViewCell.xib in Resources */,
+				AA3B65CA275949BF00032D6A /* Main.storyboard in Resources */,
+				AA3B660F275951C700032D6A /* MainViewController.xib in Resources */,
+				AA3B661D2759642A00032D6A /* MainTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3B65D6275949C200032D6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3B65E0275949C200032D6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3106DCCAD25240D9FBA6024C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CeibaApp-IOS/Pods-CeibaApp-IOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CeibaApp-IOS/Pods-CeibaApp-IOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CeibaApp-IOS/Pods-CeibaApp-IOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		610F146C9C3D914EEA9CB9BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CeibaApp-IOS-CeibaApp-IOSUITests/Pods-CeibaApp-IOS-CeibaApp-IOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CeibaApp-IOS-CeibaApp-IOSUITests/Pods-CeibaApp-IOS-CeibaApp-IOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CeibaApp-IOS-CeibaApp-IOSUITests/Pods-CeibaApp-IOS-CeibaApp-IOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89E6FE7B4D5F8AE584925E6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CeibaApp-IOS-CeibaApp-IOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC127669C3344BCCEC514A9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CeibaApp-IOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7252A0DC2D9A47E1287F0CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CeibaApp-IOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA3B65BB275949BF00032D6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3B664B275A877700032D6A /* MainDetailsPresenter.swift in Sources */,
+				AA3B6626275A464900032D6A /* NetworkService.swift in Sources */,
+				AA3B6613275958F100032D6A /* GeneralRoute.swift in Sources */,
+				AA3B65CD275949BF00032D6A /* CeibaApp_IOS.xcdatamodeld in Sources */,
+				AA3B663C275A5D6500032D6A /* MainInteractor.swift in Sources */,
+				AA3B6638275A50BE00032D6A /* MainError.swift in Sources */,
+				AA3B664E275A87B400032D6A /* MainDetailsRouter.swift in Sources */,
+				AA3B661C2759642A00032D6A /* MainTableViewCell.swift in Sources */,
+				AA3B6645275A866100032D6A /* MainDetailsModels.swift in Sources */,
+				AA3B663A275A5D5600032D6A /* MainPresenter.swift in Sources */,
+				AA3B663E275A63E100032D6A /* MainRouter.swift in Sources */,
+				AA3B662F275A4FBE00032D6A /* ModelCeiba.swift in Sources */,
+				AA3B662B275A46B500032D6A /* MainEndpoint.swift in Sources */,
+				AA3B6656275AD03600032D6A /* CMTextField.swift in Sources */,
+				AA3B6636275A505700032D6A /* MainModels.swift in Sources */,
+				AA3B661727595A9C00032D6A /* UINavigationController+CA.swift in Sources */,
+				AA3B65C7275949BF00032D6A /* BaseViewController.swift in Sources */,
+				AA3B6621275A3FEF00032D6A /* MailnDetailsViewController.swift in Sources */,
+				AA3B6624275A44E100032D6A /* LHView.swift in Sources */,
+				AA3B65C3275949BF00032D6A /* AppDelegate.swift in Sources */,
+				AA3B660E275951C700032D6A /* MainViewController.swift in Sources */,
+				AA3B6647275A86F100032D6A /* MainDetailsInterator.swift in Sources */,
+				AA3B66152759590E00032D6A /* AppRoute.swift in Sources */,
+				AA3B662D275A4E2400032D6A /* MainWorker.swift in Sources */,
+				AA3B6652275AA70C00032D6A /* MainDetailsTableViewCell.swift in Sources */,
+				AA3B6629275A469800032D6A /* MainAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3B65D4275949C200032D6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3B6661275C5AC600032D6A /* MainFailureResponse.swift in Sources */,
+				AA3B665F275C566800032D6A /* MainWorkerMock.swift in Sources */,
+				AA3B6667275C646F00032D6A /* MainDesplayLogicMock.swift in Sources */,
+				AA3B6658275C52E200032D6A /* MainEndpoinTest.swift in Sources */,
+				AA3B65DD275949C200032D6A /* CeibaApp_IOSTests.swift in Sources */,
+				AA3B6681275C74C400032D6A /* MainDetailsInteratorTest.swift in Sources */,
+				AA3B6676275C6E1200032D6A /* MainDetailsDisplayLogicMock.swift in Sources */,
+				AA3B667E275C72F200032D6A /* MainDetailsPresenterTest.swift in Sources */,
+				AA3B6663275C5F3200032D6A /* MainSucessResponse.swift in Sources */,
+				AA3B6669275C662300032D6A /* MainPresentationLogicMock.swift in Sources */,
+				AA3B6678275C6EC700032D6A /* MainDetailsPresentationLogicMock.swift in Sources */,
+				AA3B666F275C699700032D6A /* MainPresenterTest.swift in Sources */,
+				AA3B666C275C677900032D6A /* HomeViewControllerTest.swift in Sources */,
+				AA3B6672275C6C3A00032D6A /* MainInteratorTest.swift in Sources */,
+				AA3B667B275C6FAB00032D6A /* MainDetailsViewControllerTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3B65DE275949C200032D6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3B65E7275949C200032D6A /* CeibaApp_IOSUITests.swift in Sources */,
+				AA3B65E9275949C200032D6A /* CeibaApp_IOSUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA3B65DA275949C200032D6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA3B65BE275949BF00032D6A /* CeibaApp-IOS */;
+			targetProxy = AA3B65D9275949C200032D6A /* PBXContainerItemProxy */;
+		};
+		AA3B65E4275949C200032D6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA3B65BE275949BF00032D6A /* CeibaApp-IOS */;
+			targetProxy = AA3B65E3275949C200032D6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA3B65C8275949BF00032D6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA3B65C9275949BF00032D6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA3B65D0275949C100032D6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA3B65D1275949C100032D6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA3B65EA275949C200032D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA3B65EB275949C200032D6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA3B65ED275949C200032D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0811F2A7C5F9945394330B15 /* Pods-CeibaApp-IOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MY92G7T865;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CeibaApp-IOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ruebnd.CeibaApp-IOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA3B65EE275949C200032D6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 401CC6F5A8C37CB25D7226D3 /* Pods-CeibaApp-IOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MY92G7T865;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CeibaApp-IOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ruebnd.CeibaApp-IOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA3B65F0275949C200032D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20AC9B0629D5F04AA6527121 /* Pods-CeibaApp-IOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MY92G7T865;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ruebnd.CeibaApp-IOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CeibaApp-IOS.app/CeibaApp-IOS";
+			};
+			name = Debug;
+		};
+		AA3B65F1275949C200032D6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A166DB6B793C61B55EFE7FFF /* Pods-CeibaApp-IOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MY92G7T865;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ruebnd.CeibaApp-IOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CeibaApp-IOS.app/CeibaApp-IOS";
+			};
+			name = Release;
+		};
+		AA3B65F3275949C200032D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08DFB382B3ABB7D5518E6C29 /* Pods-CeibaApp-IOS-CeibaApp-IOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MY92G7T865;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ruebnd.CeibaApp-IOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CeibaApp-IOS";
+			};
+			name = Debug;
+		};
+		AA3B65F4275949C200032D6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC08C109E3267D86FA8D507C /* Pods-CeibaApp-IOS-CeibaApp-IOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MY92G7T865;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ruebnd.CeibaApp-IOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CeibaApp-IOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA3B65BA275949BF00032D6A /* Build configuration list for PBXProject "CeibaApp-IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3B65EA275949C200032D6A /* Debug */,
+				AA3B65EB275949C200032D6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA3B65EC275949C200032D6A /* Build configuration list for PBXNativeTarget "CeibaApp-IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3B65ED275949C200032D6A /* Debug */,
+				AA3B65EE275949C200032D6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA3B65EF275949C200032D6A /* Build configuration list for PBXNativeTarget "CeibaApp-IOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3B65F0275949C200032D6A /* Debug */,
+				AA3B65F1275949C200032D6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA3B65F2275949C200032D6A /* Build configuration list for PBXNativeTarget "CeibaApp-IOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3B65F3275949C200032D6A /* Debug */,
+				AA3B65F4275949C200032D6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AA3B65CB275949BF00032D6A /* CeibaApp_IOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AA3B65CC275949BF00032D6A /* CeibaApp_IOS.xcdatamodel */,
+			);
+			currentVersion = AA3B65CC275949BF00032D6A /* CeibaApp_IOS.xcdatamodel */;
+			path = CeibaApp_IOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AA3B65B7275949BF00032D6A /* Project object */;
+}
